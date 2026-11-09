@@ -1,0 +1,34 @@
+/* Importar fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* variables nomarles */
+:root {
+    /* Colores */
+    --color-fondo:   #11111b;
+    --color-fondo-2: #1e1e2e;
+    --color-fondo-3: #313244;
+    --color-fuente:  #cdd6f4;
+    --color-acento:  #f9e2af;
+    --color-azul:    #89b4fa;
+    --color-azul-2:  #74c7ec;
+
+    /* Bordes */
+    --radio-borde: 1.5rem;
+
+    /* Tamaños de fuentes */
+    --tamaño-fuente: 10px;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        /* Colores */
+        --color-fondo:   #dce0e8;
+        --color-fondo-2: #eff1f5;
+        --color-fondo-3: #ccd0da;
+        --color-fuente:  #4c4f69;
+        --color-acento:  #df8e1d;
+        --color-azul:    #04a5e5;
+        --color-azul-2:  #209fb5;
+    }
+}
+

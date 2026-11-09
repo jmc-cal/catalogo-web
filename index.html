@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Github: Cesar-Mtzz">
+    <meta name="description" content="Catalogo web de calzado, Calzado, calzado, zapato, Zapato">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMC Catalogo</title>
+    <link rel="icon" type="image/svg+xml" href="./icons/favicon.svg">
+    <link rel = "stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <header>
+        <a id="link-facebook" target="_blank" href="https://www.facebook.com/marketplace/item/1129235642875662/?mibextid=dXMIcH"><img src="./icons/facebook.svg" /></a>
+
+        <h1>Catálogo JMC</h1>
+    </header>
+
+    <main>
+        <div id="contenido">
+
+            <div class="tarjeta calculadora">
+                <p> 
+                    <span>Calcular precio: </span>
+                    Mayoreo a partir de 12 pares
+                </p>
+                <div id="contenidoCalculadora">
+                    <div id="campoCalculadora">
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" value="0" min="0" oninput="calcularPrecio()">
+                    </div>
+                    <p id="precio">Costo</p>
+                </div>
+                <p><i>El precio no incluye costos de envio ya que dependen de la distancia</i></p>
+            </div>
+
+            <div class="tarjeta">
+                <p>
+                    Estilo <span>#500</span>
+                    <br>
+                    Numeración 22cm - 30cm
+                </p>
+                <div class="carrusel">
+                    <div class="carrusel-item"><img src="./img/negro.jpg" alt="negro"><p>Negro</p></div>
+                    <div class="carrusel-item"><img src="./img/azul.jpg" alt="azul"><p>Azul</p></div>
+                    <div class="carrusel-item"><img src="./img/gris.jpg" alt="gris"><p>Gris</p></div>
+                    <div class="carrusel-item"><img src="./img/cafe.jpg" alt="cafe"><p>Cafe</p></div>
+                    <div class="carrusel-item"><img src="./img/shedron.jpg" alt="shedron"><p>Shedron</p></div>
+                    <div class="carrusel-item"><img src="./img/latte.jpg" alt="latte"><p>Latte</p></div>
+                    <div class="carrusel-item"><img src="./img/blanco.jpg" alt="blanco"><p>Blanco</p></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://github.com/Cesar-Mtzz" target="_blank">Desarrollado por Cesar-Mtzz</a>
+        <p id="year">© </p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent += new Date().getFullYear();
+    </script>
+
+</body>
+</html>
